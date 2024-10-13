@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8nr045cgj82i"]
+
+[ext_resource type="Script" path="res://scripts/base_enemy.gd" id="1_anegg"]
+
+[node name="BaseEnemy" type="CharacterBody2D" node_paths=PackedStringArray("animation")]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_anegg")
+animation = NodePath("Animation")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="DetectionArea"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="Animation" type="AnimationPlayer" parent="."]

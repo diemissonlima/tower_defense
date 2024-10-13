@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7ti5jcaedndd"]
+
+[ext_resource type="PackedScene" uid="uid://38a0s4epw3qc" path="res://scenes/character/archer.tscn" id="1_cljx1"]
+[ext_resource type="PackedScene" uid="uid://dp7it0u72kekt" path="res://scenes/enemy/red_gobling.tscn" id="2_1p8pi"]
+
+[node name="BaseLevel" type="Node2D"]
+
+[node name="Archer" parent="." instance=ExtResource("1_cljx1")]
+position = Vector2(58, 346)
+
+[node name="RedGobling" parent="." instance=ExtResource("2_1p8pi")]
+position = Vector2(1075, 365)

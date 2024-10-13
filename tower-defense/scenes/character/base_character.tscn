@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm50gawlglp7t"]
+
+[ext_resource type="Script" path="res://scripts/base_character.gd" id="1_5egdv"]
+
+[node name="BaseCharacter" type="CharacterBody2D" node_paths=PackedStringArray("animation")]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_5egdv")
+animation = NodePath("Animation")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+
+[node name="Animation" type="AnimationPlayer" parent="."]
